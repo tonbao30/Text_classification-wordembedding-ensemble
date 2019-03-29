@@ -5,3 +5,13 @@ This project aims to build document classification models  based one labeled dat
 # Dataset Description
 
 ## Data preparation 
+
+## Feature Extraction
+
+## Feature Selection
+
+# Model Selection
+
+# Ensemble
+
+# Result
