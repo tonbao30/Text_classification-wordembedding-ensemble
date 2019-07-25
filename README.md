@@ -3,8 +3,12 @@
 This project aims to build document classification models  based one labeled dataset "testing.docs.txt" to predict the targeted documents in "testing_label_pred.txt"
 
 # 1. Dataset Description
-The data
-## Data preparation 
+The dataset we consider here is a large set of news artiles we crawled from the news website, the corpus contains 133,055 news articles in total. 80% of news are randomly selected for training, the rest 20 % is selected for testing. The data folder provided contains the following files :
+1. training_docs.txt
+2. testing_docs.txt
+3. training_labels_final.txt
+link to the data file :TBD
+## 1.1. Data preparation 
 Data preparation is the first step in the process of model development. This step was implemented in
 the Python programming language. Both “training_docs.txt” and “testing_docs.txt” are preprocessed
 using this technique.
@@ -20,9 +24,9 @@ Data preparation steps are recorded below.
 - Concatenate all remaining tokens into “nsw_token”, which will be used for feature selection
 in next stages
 - Produce clean data input files under the names “corpus2.csv” and “test 2.csv”
-## Feature Extraction
+## 1.2. Feature Extraction
 
-## Feature Selection
+## 1.3. Feature Selection
 Library used: h2o (version 3.20.0.10) Example output: w2v_e30_v200_w30_f0 In the beginning, we considered two directions for feature selection using TF-IDF and using word embedding. After testing several models, we realised the embedding feature outperforms TF-IDF in this prediction task. The library h2o with the function h2o.word2vec supported our feature selection in all models.
 
 From the H20 documentation, we try the following h2o.word2vec setting to produce features.
