@@ -6,7 +6,9 @@ This project aims to build document classification models  based one labeled dat
 The dataset we consider here is a large set of news artiles we crawled from the news website, the corpus contains 133,055 news articles in total. 80% of news are randomly selected for training, the rest 20 % is selected for testing. The data folder provided contains the following files :
 1. training_docs.txt
 2. testing_docs.txt
-3. training_labels_final.txt <br>
+3. training_labels_final.txt 
+<br>
+
 link to the data file : https://1drv.ms/f/s!AiqtuilsCYc53VDqauFofKIFjxrO
 ## 1.1. Data preparation 
 Data preparation is the first step in the process of model development. This step was implemented in
